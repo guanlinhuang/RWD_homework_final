@@ -1,0 +1,29 @@
+@mixin hide-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@mixin tablet-big{
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin tablet-middle {
+    @media (max-width: 834px) {
+        @content;
+    }
+}
+
+@mixin tablet-mini {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 428px) {
+        @content;
+    }
+}

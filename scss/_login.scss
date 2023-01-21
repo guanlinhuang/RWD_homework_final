@@ -1,0 +1,117 @@
+.login {
+    background: $colors-light;
+
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $colors-dark;
+        padding: 50px 0;
+    }
+
+    p {
+        font-family: NotoSansCJKtc-Medium;
+        font-size: 20px;
+        margin: 5px 0 35px 0;
+    }
+
+    .login-box {
+        width: 300px;
+        border-top: 3px solid #FF5E45;
+        box-shadow: 3px 3px 3px #D0D0D0;
+        padding: 15px 15px 21px 15px;
+        @include mobile{
+            width: 85%;
+        }
+
+        h1 {
+            font-family: NotoSansCJKtc-Black;
+            font-size: 18px;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        a {
+            display: block;
+            font-size: 14px;
+            color: #FF5E45;
+            text-decoration: none;
+            margin-top: 3px;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 3px;
+        }
+
+    }
+
+    .input-group {
+        position: relative;
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 8px 25px;
+            border: 1px solid #CCCCCC;
+            box-shadow: inset 0px 1px 0px 0px #ECECEC;
+            border-radius: 3px;
+            text-indent: 0.5em;
+            box-sizing: border-box;
+        }
+
+        i {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+
+    }
+
+    .email-margin-bottom {
+        margin-bottom: 15px;
+    }
+
+    .button {
+        display: flex;
+        justify-content: space-between;
+
+        a,
+        input {
+            border-radius: 3px;
+            font-size: 14px;
+            color: #FFFFFF;
+            padding: 12px 55px;
+            margin-top: 36px;
+        }
+
+        input {
+            border: none;
+            padding: 9px 55px;
+            cursor: pointer;
+        }
+
+        .btn-register {
+            background: #8E8E8E;
+        }
+
+        .btn-register:hover {
+            background: #7B7B7B;
+        }
+
+        .btn-login {
+            background: #F56C23;
+        }
+
+        .btn-login:hover {
+            background: #F75000;
+        }
+    }
+
+
+}

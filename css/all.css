@@ -995,7 +995,7 @@ table {
 }
 @media (max-width: 428px) {
   .cart .content {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .cart .content .toolbar {
@@ -1006,7 +1006,6 @@ table {
 }
 @media (max-width: 428px) {
   .cart .content .toolbar {
-    width: 100%;
     flex-direction: column;
     align-items: flex-end;
   }

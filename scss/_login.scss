@@ -23,7 +23,8 @@
         border-top: 3px solid #FF5E45;
         box-shadow: 3px 3px 3px #D0D0D0;
         padding: 15px 15px 21px 15px;
-        @include mobile{
+
+        @include mobile {
             width: 85%;
         }
 
@@ -88,6 +89,9 @@
             color: #FFFFFF;
             padding: 12px 55px;
             margin-top: 36px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
 
         input {

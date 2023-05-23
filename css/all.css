@@ -786,6 +786,9 @@ table {
   color: #FFFFFF;
   padding: 12px 55px;
   margin-top: 36px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .login .button input {
   border: none;
@@ -995,7 +998,7 @@ table {
 }
 @media (max-width: 428px) {
   .cart .content {
-    max-width: 100%;
+    width: 100%;
   }
 }
 .cart .content .toolbar {
@@ -1006,6 +1009,7 @@ table {
 }
 @media (max-width: 428px) {
   .cart .content .toolbar {
+    width: 100%;
     flex-direction: column;
     align-items: flex-end;
   }

@@ -920,7 +920,7 @@ input {
   justify-content: end;
 }
 .register .button input {
-  border-radius: 3px;
+  border-radius: 5px;
   font-size: 14px;
   color: #FFFFFF;
   margin-top: 36px;

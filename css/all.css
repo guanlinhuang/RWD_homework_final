@@ -133,6 +133,12 @@ table {
   border-spacing: 0;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .header {
   width: 100%;
   position: fixed;
@@ -786,9 +792,6 @@ table {
   color: #FFFFFF;
   padding: 12px 55px;
   margin-top: 36px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 .login .button input {
   border: none;
@@ -920,10 +923,7 @@ table {
   border-radius: 3px;
   font-size: 14px;
   color: #FFFFFF;
-  padding: 12px 55px;
   margin-top: 36px;
-}
-.register .button input {
   border: none;
   padding: 9px 55px;
   cursor: pointer;

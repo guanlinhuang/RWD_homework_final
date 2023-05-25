@@ -413,6 +413,16 @@ table {
   top: 50%;
   left: 24%;
 }
+@media (max-width: 834px) {
+  .feature h2::before {
+    left: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .feature h2::before {
+    left: 17%;
+  }
+}
 @media (max-width: 428px) {
   .feature h2::before {
     content: none;
@@ -426,6 +436,16 @@ table {
   background-color: #979797;
   top: 50%;
   right: 24%;
+}
+@media (max-width: 834px) {
+  .feature h2::after {
+    right: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .feature h2::after {
+    right: 17%;
+  }
 }
 @media (max-width: 428px) {
   .feature h2::after {
@@ -789,21 +809,19 @@ table {
 .login .button a,
 .login .button input {
   border-radius: 3px;
-  font-size: 14px;
+  line-height: 16px;
+  font-size: 16px;
   color: #FFFFFF;
-  padding: 12px 55px;
+  padding: 10px 55px;
   margin-top: 36px;
+  border: none;
+  cursor: pointer;
   /*移除預設樣式*/
   -webkit-appearance: none;
   /* Safari 和 Chrome，常用於 iOS 移除內建樣式 */
   -moz-appearance: none;
   /* FireFox */
   appearance: none;
-}
-.login .button input {
-  border: none;
-  padding: 9px 55px;
-  cursor: pointer;
 }
 .login .button .btn-register {
   background: #8E8E8E;
@@ -965,31 +983,31 @@ table {
     padding: 48px 11px 0px 11px;
   }
 }
-.cart .menu {
+.cart .cart-menu {
   width: 220px;
 }
 @media (max-width: 1024px) {
-  .cart .menu {
+  .cart .cart-menu {
     width: 200px;
   }
 }
 @media (max-width: 428px) {
-  .cart .menu {
+  .cart .cart-menu {
     width: 100%;
   }
 }
-.cart .menu h1 {
+.cart .cart-menu h1 {
   color: #3D1101;
   padding: 20px 8px;
   font-size: 20px;
   display: flex;
   align-items: center;
 }
-.cart .menu h1 .fa-leaf {
+.cart .cart-menu h1 .fa-leaf {
   font-size: 26px;
   padding-right: 15px;
 }
-.cart .menu li a {
+.cart .cart-menu li a {
   display: block;
   text-decoration: none;
   padding: 8px 0;
@@ -997,7 +1015,7 @@ table {
   border-bottom: #3D1101 1px solid;
   padding-left: 8px;
 }
-.cart .menu li a:hover {
+.cart .cart-menu li a:hover {
   color: #ffffff;
   background: #3D1101;
 }
@@ -1011,7 +1029,7 @@ table {
 }
 @media (max-width: 428px) {
   .cart .content {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .cart .content .toolbar {
@@ -1038,12 +1056,6 @@ table {
     margin: 23px 0 20px 0;
   }
 }
-.cart .content .toolbar .search input {
-  /*移除預設樣式*/
-  -webkit-appearance: none; /* Safari 和 Chrome，常用於 iOS 移除內建樣式 */
-  -moz-appearance: none; /* FireFox */
-  appearance: none;
-}
 .cart .content .toolbar .search .text {
   width: 428px;
   height: 32px;
@@ -1051,6 +1063,9 @@ table {
   box-sizing: border-box;
   outline: none;
   background-color: #EFE9E7;
+  -webkit-appearance: none; /* Safari 和 Chrome，常用於 iOS 移除內建樣式 */
+  -moz-appearance: none; /* FireFox */
+  appearance: none;
 }
 @media (max-width: 834px) {
   .cart .content .toolbar .search .text {

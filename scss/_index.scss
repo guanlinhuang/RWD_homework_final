@@ -30,6 +30,14 @@
         top: 50%;
         left: 24%;
 
+        @include tablet-middle {
+            left: 20%;
+        }
+
+        @include tablet-mini {
+            left: 17%;
+        }
+
         @include mobile {
             content: none;
         }
@@ -43,6 +51,13 @@
         background-color: #979797;
         top: 50%;
         right: 24%;
+
+        @include tablet-middle {
+            right: 20%;
+        }
+        @include tablet-mini {
+            right: 17%;
+        }
 
         @include mobile {
             content: none;

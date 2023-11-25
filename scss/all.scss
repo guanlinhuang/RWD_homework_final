@@ -1,8 +1,9 @@
-@import "reset";
-@import "variable";
-@import "mixin";
-@import "layout";
-@import "index";
-@import "login";
-@import "register";
-@import "cart";
+@import "variable"; // 變數一定要放最前面
+@import "reset"; // reset.css
+@import "base"; // 全域設定css
+@import "mixin"; // 省去重複撰寫相同 CSS，透過@include使用參數
+@import "layout"; // 共用框架 header、footer
+@import "index"; // 首頁，以下是各頁面
+@import "login"; // 登入
+@import "register"; // 註冊
+@import "cart"; // 購物車

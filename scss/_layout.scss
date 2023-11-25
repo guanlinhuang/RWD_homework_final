@@ -5,12 +5,9 @@
 	background: rgba(0, 0, 0, 0.75);
 
 	.container {
-		max-width: 1024px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin: 0 auto;
-		box-sizing: border-box;
 	}
 
 	.logo {
@@ -139,9 +136,7 @@
 	background: $colors-light;
 
 	.container {
-		max-width: 1024px;
 		padding: 50px 42px;
-		box-sizing: border-box;
 		display: flex;
 		margin: 0 auto;
 
